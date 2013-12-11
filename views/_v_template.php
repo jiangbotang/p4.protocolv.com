@@ -6,19 +6,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<link rel="stylesheet" href="/css/layout.css" type="text/css" media="all">
-	<script src="js/jquery-1.8.2.min.js"></script>
-	<script src="js/cufon-yui.js"></script>
-	<script src="js/cufon-replace.js"></script>
-	<script src="js/Myriad_Pro_300.font.js"></script>
-	<script src="js/Myriad_Pro_400.font.js"></script>	
+	<script src="/js/jquery-1.8.2.min.js"></script>
+	<script src="/js/cufon-yui.js"></script>
+	<script src="/js/cufon-replace.js"></script>
+	<script src="/s/Myriad_Pro_300.font.js"></script>
+	<script src="/s/Myriad_Pro_400.font.js"></script>	
 					
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 	
 </head>
 
-<body id="page1">
-
+<body id="<?=$pageN?>">
 	<!-- START PAGE SOURCE -->
 	<div class="body1"></div>
 	<div class="body2">
@@ -31,7 +30,11 @@
 	            <li><a href="researches.html">Researches</a></li>
 	            <li><a href="services.html">Services</a></li>
 	            <li><a href="contacts.html">Contacts</a></li>
-	            <li class="bg_none"><a href="events.html">Login</a></li>
+	            <?php if($user): ?>
+	            <li class="bg_none"><a href="/users/logout">Logout</a></li>
+	        	<?php else: ?>
+	        	<li class="bg_none"><a href="/users/login">Login</a></li>
+	        	<?php endif; ?>
 	          </ul>
 	        </nav>
 	        <h1><a href="#" id="logo">science</a></h1>
@@ -51,6 +54,7 @@
 	<!-- view content goes here -->
 	<?php if(isset($content)) echo $content; ?>
 
+	<!-- footer -->
 	<footer>
 	  <div class="footerlink">
 	    <p class="lf">Copyright &copy; 2012 <a href="#">Research Manager</a> - All Rights Reserved</p>
@@ -58,8 +62,8 @@
 	    <div style="clear:both;"></div>
 	  </div>
 	</footer>
+
 	<script> Cufon.now(); </script>
-	<!-- END PAGE SOURCE -->
 
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 

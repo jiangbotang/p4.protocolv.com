@@ -14,20 +14,20 @@
   <section id="content">
     <div class="wrapper pad_bot1">
       <article class="col1 pad_left2">
-        <h2>A subtle thought may yet give rise to <span>fruitful inquiry that can establish truths of</span><span>great value.</span></h2>
+        <h2>A subtle thought may yet give rise to fruitful inquiry that can establish truths of great value.</h2>
         <p><strong>Jiangbo Tang</strong> - a little bit about me: I am a geneticist and biochemist working at the University of Pennsylvania 
         	School of Medicine. I study how cancer therapeutics interact with our cells, particularly with our genetic material DNA. I am 
         	also a web developer working towards improving my skills.</p>
         <a href="#" class="link1">Read More</a> </article>
       <article class="col2 pad_left1">
         <h2 class="color1">Investigating</h2>
-        <figure><img alt="" src="images/page1_img1.jpg" class="pad_bot1 marg_top"></figure>
-        <p>Pursuit the truth of our body to fight cancer.</p>
+        <figure><img alt="" src="/images/page1_img1.jpg" class="pad_bot1 marg_top"></figure>
+        <p>Investigate cancer to help patients.</p>
       </article>
       <article class="col2 pad_left1">
-        <h2 class="color1">Developing</h2>
-        <figure><img alt="" src="images/page1_img2.jpg" class="pad_bot1 marg_top"></figure>
-        <p>Grasp and use the power of technology.</p>
+        <h2 class="color1">Engineering</h2>
+        <figure><img alt="" src="/images/page1_img2.jpg" class="pad_bot1 marg_top"></figure>
+        <p>Harness the power of digitalization.</p>
       </article>
     </div>
   </section>

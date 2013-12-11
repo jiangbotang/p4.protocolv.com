@@ -127,3 +127,23 @@ footer .footerlink{position:relative; margin:0 auto; width:850px; z-index:2;}
 .footerlink a:hover{color:#dfd2e7; background-color:transparent; text-decoration:none;}
 .footerlink .lf{float:left;}
 .footerlink .rf{float:right;}
+
+
+/* Start of css added by myself*/
+.btn {
+	background:url("../images/menu_bg.gif") top repeat-x #b3b3b3; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;  color:#673f85;
+	padding: 3px 10px 3px 10px;
+	font-weight: bold;
+	margin-left: 86px;
+}
+
+#page5 .col4 strong{width:86px; float:left;}
+
+
+#signupForm div {
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	background-color: #E6E6FA;
+}
