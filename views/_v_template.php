@@ -9,8 +9,8 @@
 	<script src="/js/jquery-1.8.2.min.js"></script>
 	<script src="/js/cufon-yui.js"></script>
 	<script src="/js/cufon-replace.js"></script>
-	<script src="/s/Myriad_Pro_300.font.js"></script>
-	<script src="/s/Myriad_Pro_400.font.js"></script>	
+	<script src="/js/Myriad_Pro_300.font.js"></script>
+	<script src="/js/Myriad_Pro_400.font.js"></script>	
 					
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
