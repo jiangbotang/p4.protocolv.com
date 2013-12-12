@@ -28,10 +28,10 @@
 	          <ul id="menu">
 	            <li id="menu_active"><a href="index.php">Home</a></li>
 	            <li><a href="researches.html">Researches</a></li>
-	            <li><a href="services.html">Services</a></li>
+	            <li><a href="/archives/index">Archives</a></li>
 	            <li><a href="contacts.html">Contacts</a></li>
 	            <?php if($user): ?>
-	            <li class="bg_none"><a href="/users/logout">Logout</a></li>
+	            <li class="bg_none"><a href="/users/logout">Logout: <?=$user->first_name?></a></li>
 	        	<?php else: ?>
 	        	<li class="bg_none"><a href="/users/login">Login</a></li>
 	        	<?php endif; ?>

@@ -15,9 +15,9 @@
     <div class="wrapper pad_bot1">
       <article class="col1 pad_left2">
         <h2>A subtle thought may yet give rise to fruitful inquiry that can establish truths of great value.</h2>
-        <p><strong>Jiangbo Tang</strong> - a little bit about me: I am a geneticist and biochemist working at the University of Pennsylvania 
+        <p><strong>Jiangbo Tang</strong> - a little bit about me: I am a biochemist and geneticist working at the University of Pennsylvania 
         	School of Medicine. I study how cancer therapeutics interact with our cells, particularly with our genetic material DNA. I am 
-        	also a web developer working towards improving my skills.</p>
+        	also a web developer working towards building my experience.</p>
         <a href="#" class="link1">Read More</a> </article>
       <article class="col2 pad_left1">
         <h2 class="color1">Investigating</h2>
