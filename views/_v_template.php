@@ -29,7 +29,7 @@
 	            <li id="menu_active"><a href="index.php">Home</a></li>
 	            <li><a href="researches.html">Researches</a></li>
 	            <li><a href="/archives/index">Archives</a></li>
-	            <li><a href="contacts.html">Contacts</a></li>
+	            <li><a href="/contacts/index">Contacts</a></li>
 	            <?php if($user): ?>
 	            <li class="bg_none"><a href="/users/logout">Logout: <?=$user->first_name?></a></li>
 	        	<?php else: ?>
