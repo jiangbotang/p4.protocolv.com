@@ -137,6 +137,12 @@ footer .footerlink{position:relative; margin:0 auto; width:850px; z-index:2;}
 	margin-left: 86px;
 }
 
+.btn_2 {
+	background:url("../images/menu_bg.gif") top repeat-x #b3b3b3; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;  color:#673f85;
+	padding: 3px 10px 3px 10px;
+	font-weight: bold;
+}
+
 #page5 .col4 strong{width:86px; float:left;}
 
 
@@ -144,7 +150,7 @@ footer .footerlink{position:relative; margin:0 auto; width:850px; z-index:2;}
 	margin-bottom: 5px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], textarea {
 	background-color: #E6E6FA;
 }
 

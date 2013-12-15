@@ -26,5 +26,15 @@ class base_controller {
 			$this->template->set_global('user', $this->user);
 			
 	}
+
+	/*
+	 * a function to check if an user is logged in.
+	 */
+	public function loginCheck() {
+		if(!$this->user) {
+			Router::redirect("/users/login");
+		}
+
+	}
 	
 } # eoc
