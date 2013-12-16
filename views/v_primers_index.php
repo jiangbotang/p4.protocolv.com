@@ -3,9 +3,9 @@
     <section id="content_top">
       <article class="pad_left2 col3">
         <h2>Select Category:</h2>
-        <a href="/plasmids/index">plasmids</a>
         <a href="/primers/index">primers</a>
-        <a href="/sirna/index">siRNAs</a>
+        <a href="/plasmids/index">plasmids</a>
+        <a href="/sirnas/index">siRNAs</a>
       </article>
       <article class="pad_left1 col2">
         <h2>Display Control:</h2>
@@ -21,27 +21,26 @@
     <section id="content">
       <article class="pad_left2">
         <h2>primers list</h2>
-
-
-
-        <form id="ContactForm" action="#">
-          <div class="wrapper">
-            <div class="wrapper">
-              <p>Your Name:</p>
-              <input type="text" class="input">
-            </div>
-            <div class="wrapper">
-              <p>Your E-mail:</p>
-              <input type="text" class="input">
-            </div>
-            <div class="wrapper">
-              <p>Your Message:</p>
-              <textarea cols="1" rows="1"></textarea>
-            </div>
-            <div class="wrapper"> <a href="#" class="link1 right">Send</a> <a href="#" class="link1 right">Clear</a> </div>
-          </div>
-        </form>
       </article>
+
+      <?php foreach($primers as $primer): ?>
+      <article class="pad_left2">
+        <h4>ID: <?=$primer['primer_id']?>; Name: <?=$primer['name']?>
+            <br>
+            Sequence: <?php echo strtoupper($primer['sequence']); ?>
+        </h4>
+        <p3>Additional information: <?=$primer['additional_info']?><br>
+          <time datetime="<?=Time::display($primer['created'], 'Y-m-d G:i')?>">
+            <?=Time::display($primer['created'])?>
+          </time>
+          by <?=$primer['first_name']?> <?=$primer['last_name']?>.
+        </p>
+
+
+      </article>
+
+      <?php endforeach; ?>
+
     </section>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <?php
-class primers_controller extends base_controller {
+class sirnas_controller extends base_controller {
 	public function __construct() {
 		parent::__construct();
 	}
@@ -10,38 +10,39 @@ class primers_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_primers_index');
-		$this->template->title = "primers";
+		$this->template->content = View::instance('v_sirnas_index');
+		$this->template->title = "siRNA";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
 
 		# Build the query
 		$q = 'SELECT
-				primers.primer_id,
-				primers.name,
-				primers.created,
-				primers.modified,
-				primers.user_id,
-				primers.purpose,
-				primers.restriction_enzyme,
-				primers.sequence,
-				primers.additional_info,
+				sirnas.sirna_id,
+				sirnas.name,
+				sirnas.created,
+				sirnas.modified,
+				sirnas.user_id,
+				sirnas.target_gene,
+				sirnas.target_region,
+				sirnas.target_seq,
+				sirnas.sirna_seq,
+				sirnas.additional_info,
 				users.first_name,
 				users.last_name
-			FROM primers
+			FROM sirnas
 			INNER JOIN users
-				ON primers.user_id = users.user_id
+				ON sirnas.user_id = users.user_id
 			LIMIT 50';
 
 		# Run the query
-		$primers = DB::instance(DB_NAME)->select_rows($q);
+		$sirnas = DB::instance(DB_NAME)->select_rows($q);
 
 		# Pass the data to the View
-		$this->template->content->primers = $primers;
+		$this->template->content->sirnas = $sirnas;
 
 		# Create an array of 1 or many client files to be included in the head
     	$client_files_body = Array(
-        '/js/primers_index.js'
+        '/js/sirnas_index.js'
         );
 
         # Use load_client_files to generate the links from the above array
@@ -56,14 +57,14 @@ class primers_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_primers_add');
-		$this->template->title = "Add a new primer";
+		$this->template->content = View::instance('v_sirnas_add');
+		$this->template->title = "Add a new siRNA";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
 
 		# Create an array of 1 or many client files to be included in the head
     	$client_files_body = Array(
-        '/js/primers_add.js'
+        '/js/sirnas_add.js'
         );
 
         # Use load_client_files to generate the links from the above array
@@ -79,11 +80,11 @@ class primers_controller extends base_controller {
 		$_POST['created'] = Time::now();
 		$_POST['modified'] = Time::now();
 
-		// Insert the primer
-		DB::instance(DB_NAME)->insert('primers', $_POST);
+		// Insert the siRNA
+		DB::instance(DB_NAME)->insert('sirnas', $_POST);
 
 		// Send a message back
-		echo "A new primer was added.";
+		echo "A new siRNA was added.";
 
 	}
 

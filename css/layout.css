@@ -157,3 +157,11 @@ input[type="text"], input[type="password"], textarea {
 .errorMessage {
 	color: ;
 }
+
+.inputEle {
+	margin-bottom: 5px;
+}
+
+#newPrimerForm input, #newPlasmidForm input, #newSirnaForm input {
+	width: 300px;
+}

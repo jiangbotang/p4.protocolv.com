@@ -1,0 +1,38 @@
+// add a new plasmid entry with an Ajax call
+$('#submitNewPlasmid').click(function() {
+
+	// prepare data to be sent via ajax
+	var name = $("#name").val();
+	var backbone = $("#backbone").val();
+	var insertion = $("#insertion").val();
+	var clone_num = $("#clone_num").val();
+	var purpose = $("#purpose").val();
+	var cloning_sites = $("#cloning_sites").val();
+	var mammalian_selec = $("#mammalian_selec").val();
+	var bacterial_selec = $("#bacterial_selec").val();
+	var source = $("#source").val();
+	var additional_info = $("#additional_info").val();
+
+
+	// ajax call
+	$.ajax({
+		type: "POST",
+		url: "/plasmids/p_add",
+		data: {name: name,
+				backbone: backbone,
+				insertion: insertion,
+				clone_num: clone_num,
+				purpose: purpose,
+				cloning_sites: cloning_sites,
+				mammalian_selec: mammalian_selec,
+				bacterial_selec: bacterial_selec,
+				source: source,
+				additional_info: additional_info
+			},
+		success: function(response) {
+			console.log(response);
+			$("#results").html(response);
+		}
+	});
+
+});

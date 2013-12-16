@@ -28,7 +28,7 @@
 	          <ul id="menu">
 	            <li id="menu_active"><a href="index.php">Home</a></li>
 	            <li><a href="researches.html">Researches</a></li>
-	            <li><a href="/archives/index">Archives</a></li>
+	            <li><a href="/primers/index">Archives</a></li>
 	            <li><a href="/contacts/index">Contacts</a></li>
 	            <?php if($user): ?>
 	            <li class="bg_none"><a href="/users/logout">Logout: <?=$user->first_name?></a></li>
@@ -44,7 +44,7 @@
 	          <div class="text1">Discovering New Ways <span>of Managing Research</span></div>
 	          <p>As a scientist working in a biomedical research laboratory, I often feel the need of an efficient way to orgnize reagents, protocols, etc.
 	            So here is the website I build to help myself. I am also thinking about ways of using this site to help other scientists as well, 
-	            so please stay in touch.</p>
+	            so please stay tuned.</p>
 	        </article>
 	      </div>
 	    </header>
