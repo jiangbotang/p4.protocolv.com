@@ -7,7 +7,7 @@
           <strong>State:</strong>Pennsylvania<br>
           <strong>City:</strong>Philadelphia<br>
           <strong>Telephone:</strong>412-361-zero135<br>
-          <strong>Email:</strong><a href="#">protocolvservice@gmail.com</a> </p>
+          <strong>Email:</strong><a href="#" id="cont_email">protocolvservice@gmail.com</a> </p>
       </article>
       <article class="pad_left1 col2">
         <h2>Miscellaneous Info:</h2>

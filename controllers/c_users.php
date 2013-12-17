@@ -11,6 +11,8 @@ class users_controller extends base_controller {
 		$this->template->title = "Login";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
+		# the login menu as active menu
+		$this->template->menu_login = "menu_active";
 
 		# Pass an error message to the view if the method is called with an error parameter
 		if ($error == "loginError") {

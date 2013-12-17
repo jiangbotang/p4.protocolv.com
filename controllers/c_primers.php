@@ -14,6 +14,8 @@ class primers_controller extends base_controller {
 		$this->template->title = "primers";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
+		# the archives menu as active menu
+		$this->template->menu_arch = "menu_active";
 
 		# Build the query
 		$q = 'SELECT
@@ -60,6 +62,8 @@ class primers_controller extends base_controller {
 		$this->template->title = "Add a new primer";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
+		# the archives menu as active menu
+		$this->template->menu_arch = "menu_active";
 
 		# Create an array of 1 or many client files to be included in the head
     	$client_files_body = Array(

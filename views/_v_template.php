@@ -26,14 +26,14 @@
 	      <div class="wrapper">
 	        <nav>
 	          <ul id="menu">
-	            <li id="menu_active"><a href="index.php">Home</a></li>
-	            <li><a href="researches.html">Researches</a></li>
-	            <li><a href="/primers/index">Archives</a></li>
-	            <li><a href="/contacts/index">Contacts</a></li>
+	            <li <?php if(isset($menu_home)) echo 'id="'."$menu_home".'"' ?>><a href="/">Home</a></li>
+	            <li <?php if(isset($menu_res)) echo 'id="'."$menu_res".'"' ?>><a href="/research/index">Researches</a></li>
+	            <li <?php if(isset($menu_arch)) echo 'id="'."$menu_arch".'"' ?>><a href="/primers/index">Archives</a></li>
+	            <li <?php if(isset($menu_cont)) echo 'id="'."$menu_cont".'"' ?>><a href="/contacts/index">Contacts</a></li>
 	            <?php if($user): ?>
 	            <li class="bg_none"><a href="/users/logout">Logout: <?=$user->first_name?></a></li>
 	        	<?php else: ?>
-	        	<li class="bg_none"><a href="/users/login">Login</a></li>
+	        	<li class="bg_none" <?php if(isset($menu_login)) echo 'id="'."$menu_login".'"' ?>><a href="/users/login">Login</a></li>
 	        	<?php endif; ?>
 	          </ul>
 	        </nav>
@@ -57,7 +57,7 @@
 	<!-- footer -->
 	<footer>
 	  <div class="footerlink">
-	    <p class="lf">Copyright &copy; 2012 <a href="#">Research Manager</a> - All Rights Reserved</p>
+	    <p class="lf">Copyright &copy; 2012 <a href="#">Research Manager</a> by Jiangbo Tang - All Rights Reserved</p>
 	    <p class="rf"><a href="http://www.free-css.com/">Free CSS Templates</a> by <a href="http://www.templatemonster.com/">TemplateMonster</a></p>
 	    <div style="clear:both;"></div>
 	  </div>
