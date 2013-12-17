@@ -11,7 +11,9 @@
       </article>
       <article class="pad_left1 col2">
         <h2>Miscellaneous Info:</h2>
-        <p class="marg_top">Namlibero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudi andae sint et molestiae non recusandae itaque earum rerum hic. Namlibero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo.</p>
+        <p class="marg_top">Please send me an email if you any  questions, suggestions, or anything else.<br>
+          You could also use the form below to send me a message.<br>
+          I try my best to get back to you A.S.A.P.</p>
       </article>
     </section>
   </div>
