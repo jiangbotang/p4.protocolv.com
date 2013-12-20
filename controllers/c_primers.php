@@ -10,7 +10,13 @@ class primers_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_primers_index');
+		# The View has a modular strucutre, e.g. template contains content, content
+		# contains cat_con and primers_index_main...
+		$this->template->content = View::instance('v_content');
+		$this->template->content->cat_con = View::instance('v_cat_con');
+		$this->template->content->cat_con->cat = View::instance('v_cat');
+		$this->template->content->cat_con->con = View::instance('v_con');
+		$this->template->content->primers_index_main = View::instance('v_primers_index_main');
 		$this->template->title = "primers";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
@@ -38,8 +44,9 @@ class primers_controller extends base_controller {
 		# Run the query
 		$primers = DB::instance(DB_NAME)->select_rows($q);
 
+		
 		# Pass the data to the View
-		$this->template->content->primers = $primers;
+		$this->template->content->primers_index_main->primers = $primers;
 
 		# Create an array of 1 or many client files to be included in the head
     	$client_files_body = Array(
@@ -57,8 +64,12 @@ class primers_controller extends base_controller {
 		$this->loginCheck();
 
 		// if user is logged in
-		# Setup up the view.
-		$this->template->content = View::instance('v_primers_add');
+		# Setup up the modular view.
+		$this->template->content = View::instance('v_content');
+		$this->template->content->cat_con = View::instance('v_cat_con');
+		$this->template->content->cat_con->cat = View::instance('v_cat');
+		$this->template->content->cat_con->con = View::instance('v_con');
+		$this->template->content->primers_add_main = View::instance('v_primers_add_main');
 		$this->template->title = "Add a new primer";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";

@@ -1,26 +1,8 @@
-<div class="body3">
-  <div class="main">
-    <section id="content_top">
-      <article class="pad_left2 col3">
-        <h2>Select Category:</h2>
-        <a href="/primers/index">primers</a>
-        <a href="/plasmids/index">plasmids</a>
-        <a href="/sirnas/index">siRNAs</a>
-      </article>
-      <article class="pad_left1 col2">
-        <h2>Display Control:</h2>
-        <a href="/primers/add"><button class="btn_2" id="addNewPrimer">Add A New Primer</button><a/>
-      </article>
-    </section>
-  </div>
-</div>
-
-
 <div id="primerDisplay">
   <div class="main">
     <section id="content">
       <article class="pad_left2">
-        <h2>primers list</h2>
+        <a href="/primers/add"><button class="btn_2" id="addNewPrimer">Add A New Primer</button><a/>
       </article>
 
       <?php foreach($primers as $primer): ?>

@@ -10,7 +10,11 @@ class sirnas_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_sirnas_index');
+		$this->template->content = View::instance('v_content');
+		$this->template->content->cat_con = View::instance('v_cat_con');
+		$this->template->content->cat_con->cat = View::instance('v_cat');
+		$this->template->content->cat_con->con = View::instance('v_con');
+		$this->template->content->sirnas_index_main = View::instance('v_sirnas_index_main');
 		$this->template->title = "siRNA";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
@@ -40,7 +44,7 @@ class sirnas_controller extends base_controller {
 		$sirnas = DB::instance(DB_NAME)->select_rows($q);
 
 		# Pass the data to the View
-		$this->template->content->sirnas = $sirnas;
+		$this->template->content->sirnas_index_main->sirnas = $sirnas;
 
 		# Create an array of 1 or many client files to be included in the head
     	$client_files_body = Array(
@@ -59,7 +63,11 @@ class sirnas_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_sirnas_add');
+		$this->template->content = View::instance('v_content');
+		$this->template->content->cat_con = View::instance('v_cat_con');
+		$this->template->content->cat_con->cat = View::instance('v_cat');
+		$this->template->content->cat_con->con = View::instance('v_con');
+		$this->template->content->sirnas_add_main = View::instance('v_sirnas_add_main');
 		$this->template->title = "Add a new siRNA";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";

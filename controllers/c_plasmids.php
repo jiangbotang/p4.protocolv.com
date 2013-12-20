@@ -10,7 +10,11 @@ class plasmids_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_plasmids_index');
+		$this->template->content = View::instance('v_content');
+		$this->template->content->cat_con = View::instance('v_cat_con');
+		$this->template->content->cat_con->cat = View::instance('v_cat');
+		$this->template->content->cat_con->con = View::instance('v_con');
+		$this->template->content->plasmids_index_main = View::instance('v_plasmids_index_main');
 		$this->template->title = "plasmids";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
@@ -44,7 +48,7 @@ class plasmids_controller extends base_controller {
 		$plasmids = DB::instance(DB_NAME)->select_rows($q);
 
 		# Pass the data to the View
-		$this->template->content->plasmids = $plasmids;
+		$this->template->content->plasmids_index_main->plasmids = $plasmids;
 
 		echo $this->template;
 	}
@@ -55,7 +59,11 @@ class plasmids_controller extends base_controller {
 
 		// if user is logged in
 		# Setup up the view.
-		$this->template->content = View::instance('v_plasmids_add');
+		$this->template->content = View::instance('v_content');
+		$this->template->content->cat_con = View::instance('v_cat_con');
+		$this->template->content->cat_con->cat = View::instance('v_cat');
+		$this->template->content->cat_con->con = View::instance('v_con');
+		$this->template->content->plasmids_add_main = View::instance('v_plasmids_add_main');
 		$this->template->title = "Add a new plasmid";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";

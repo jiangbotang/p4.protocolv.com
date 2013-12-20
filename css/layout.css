@@ -142,6 +142,7 @@ footer .footerlink{position:relative; margin:0 auto; width:850px; z-index:2;}
 	background:url("../images/menu_bg.gif") top repeat-x #b3b3b3; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;  color:#673f85;
 	padding: 3px 10px 3px 10px;
 	font-weight: bold;
+	margin: 20px 0px 20px 0px;
 }
 
 #page5 .col4 strong{width:86px; float:left;}
