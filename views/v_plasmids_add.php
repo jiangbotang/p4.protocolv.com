@@ -5,7 +5,7 @@
         <h2>Select Category:</h2>
         <a href="/primers/index">primers</a>
         <a href="/plasmids/index">plasmids</a>        
-        <a href="/sirna/index">siRNAs</a>
+        <a href="/sirnas/index">siRNAs</a>
       </article>
       <article class="pad_left1 col2">
         <h2>Display Control:</h2>
