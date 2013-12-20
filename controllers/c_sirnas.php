@@ -14,6 +14,8 @@ class sirnas_controller extends base_controller {
 		$this->template->title = "siRNA";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
+		# the archives menu as active menu
+		$this->template->menu_arch = "menu_active";
 
 		# Build the query
 		$q = 'SELECT
@@ -61,6 +63,8 @@ class sirnas_controller extends base_controller {
 		$this->template->title = "Add a new siRNA";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
+		# the archives menu as active menu
+		$this->template->menu_arch = "menu_active";
 
 		# Create an array of 1 or many client files to be included in the head
     	$client_files_body = Array(

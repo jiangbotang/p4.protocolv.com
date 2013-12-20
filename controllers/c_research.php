@@ -1,6 +1,6 @@
 <?php
 
-class index_controller extends base_controller {
+class research_controller extends base_controller {
 	
 	/*-------------------------------------------------------------------------------------------------
 
@@ -10,22 +10,22 @@ class index_controller extends base_controller {
 	} 
 		
 	/*-------------------------------------------------------------------------------------------------
-	Accessed via http://localhost/index/index/
+	Accessed via /research/index
 	-------------------------------------------------------------------------------------------------*/
 	public function index() {
 		
 		# Any method that loads a view will commonly start with this
 		# First, set the content of the template with a view file
 
-			$this->template->content = View::instance('v_index_index');
+			$this->template->content = View::instance('v_research_index');
 			
 		# Now set the <title> tag
-			$this->template->title = "Welcome to Research Manager";
+			$this->template->title = "My Researches";
 
 		# pageN is the id of the body tag of the view template
-			$this->template->pageN = "page1";
+			$this->template->pageN = "page2";
 		# the home menu as active menu
-			$this->template->menu_home = "menu_active";
+			$this->template->menu_res = "menu_active";
 	
 		# CSS/JS includes
 			/*

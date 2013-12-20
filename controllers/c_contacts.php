@@ -11,6 +11,8 @@ class contacts_controller extends base_controller {
 		$this->template->title = "Contatcs";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
+		# the contact menu as active menu
+		$this->template->menu_cont = "menu_active";
 
 		#Render template
 		echo $this->template;	

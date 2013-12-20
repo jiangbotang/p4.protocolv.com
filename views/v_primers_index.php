@@ -29,16 +29,13 @@
             <br>
             Sequence: <?php echo strtoupper($primer['sequence']); ?>
         </h4>
-        <p3>Additional information: <?=$primer['additional_info']?><br>
+        <p>Additional information: <?=$primer['additional_info']?><br>
           <time datetime="<?=Time::display($primer['created'], 'Y-m-d G:i')?>">
             <?=Time::display($primer['created'])?>
           </time>
           by <?=$primer['first_name']?> <?=$primer['last_name']?>.
         </p>
-
-
       </article>
-
       <?php endforeach; ?>
 
     </section>
