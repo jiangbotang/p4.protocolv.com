@@ -4,7 +4,8 @@ class primers_controller extends base_controller {
 		parent::__construct();
 	}
 
-	public function index() {
+
+	public function index($page = 1) {
 		// check user login status
 		$this->loginCheck();
 
@@ -17,6 +18,10 @@ class primers_controller extends base_controller {
 		$this->template->content->cat_con->cat = View::instance('v_cat');
 		$this->template->content->cat_con->con = View::instance('v_con');
 		$this->template->content->primers_index_main = View::instance('v_primers_index_main');
+		$this->template->content->primers_index_main->item_nav = View::instance('v_item_nav');
+
+		$this->template->content->primers_index_main->item_nav->currentPage = $page;
+
 		$this->template->title = "primers";
 		# set body tag id 'pageN'
 		$this->template->pageN = "page5";
@@ -24,6 +29,9 @@ class primers_controller extends base_controller {
 		$this->template->menu_arch = "menu_active";
 
 		# Build the query
+		$lower_b = ($page - 1) * 5 + 1;
+		$upper_b = $page * 5;
+
 		$q = 'SELECT
 				primers.primer_id,
 				primers.name,
@@ -39,7 +47,7 @@ class primers_controller extends base_controller {
 			FROM primers
 			INNER JOIN users
 				ON primers.user_id = users.user_id
-			LIMIT 50';
+			WHERE primers.primer_id BETWEEN '."$lower_b".' AND '."$upper_b";
 
 		# Run the query
 		$primers = DB::instance(DB_NAME)->select_rows($q);

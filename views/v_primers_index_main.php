@@ -20,6 +20,10 @@
       </article>
       <?php endforeach; ?>
 
+      <article class="pad_left2">
+      <?php if(isset($item_nav)) echo $item_nav; ?>
+      </article>
+
     </section>
   </div>
 </div>
