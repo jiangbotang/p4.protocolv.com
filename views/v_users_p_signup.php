@@ -6,9 +6,9 @@
         <h2>Login Here</h2>
         <form id="loginForm" action="/users/p_login" method="POST">
           <label for="email"><strong>Email: </strong></label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" data-validation="email">
           <label for="password"><strong>Password: </strong></label>
-          <input type="text" name="password" id="password">
+          <input type="password" name="password" id="password" data-validation="required">
           <input type="submit" value="Log In" class="btn">
         </form>
         <div class="errorMessage">

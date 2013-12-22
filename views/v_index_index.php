@@ -18,7 +18,7 @@
         <p><strong>Jiangbo Tang</strong> - a little bit about me: I am a biochemist and geneticist working at the University of Pennsylvania 
         	School of Medicine. I study how cancer therapeutics interact with our cells, particularly with our genetic material DNA. I am 
         	also a web developer working towards building my experience.</p>
-        <a href="#" class="link1">Read More</a> </article>
+        <a href="/research/index" class="link1">Read More</a> </article>
       <article class="col2 pad_left1">
         <h2 class="color1">Investigating</h2>
         <figure><img alt="" src="/images/page1_img1.jpg" class="pad_bot1 marg_top"></figure>

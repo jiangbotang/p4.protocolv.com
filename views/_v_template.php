@@ -68,6 +68,11 @@
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 
 	<script> Cufon.now(); </script>
-	<script>$.validate();</script>
+	<!-- load forma validation here -->
+	<script>
+		$.validate({
+			modules: 'security'
+		});
+	</script>
 </body>
 </html>

@@ -55,10 +55,14 @@ class users_controller extends base_controller {
 			$_POST['modified'] = Time::now();
 
 			# Encrypt the password
-			$_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+			$_POST['password'] = sha1(PASSWORD_SALT.$_POST['pass']);
 
 			# Create an encrypted token via their email address and a random string
 			$_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
+
+			# Delete excess element from $_POST to prepare for db insertion
+			unset($_POST['pass_confirmation']);
+			unset($_POST['pass']);
 
 			#Insert this user into the database
 			$user_id = DB::instance(DB_NAME)->insert('users', $_POST);

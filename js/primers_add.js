@@ -8,21 +8,28 @@ $('#submitNewPrimer').click(function() {
 	var restriction_enzyme = $("#restriction_enzyme").val();
 	var additional_info = $("#additional_info").val();
 
+	//  ajaxa call only if required fields is not null or empty
+	if (name && sequence && purpose) {
+		// ajax call
+		$.ajax({
+			type: "POST",
+			url: "/primers/p_add",
+			data: {name: name,
+					sequence: sequence,
+					purpose: purpose,
+					restriction_enzyme: restriction_enzyme,
+					additional_info: additional_info
+				},
+			success: function(response) {
+				$("#results").html(response);
+				$("#results").fadeOut(7000);
+				$(":input").val("");
+			}
+		});
+	} else {
+		$("#results").html("Please fill in required fields.");
+	}
 
-	// ajax call
-	$.ajax({
-		type: "POST",
-		url: "/primers/p_add",
-		data: {name: name,
-				sequence: sequence,
-				purpose: purpose,
-				restriction_enzyme: restriction_enzyme,
-				additional_info: additional_info
-			},
-		success: function(response) {
-			console.log(response);
-			$("#results").html(response);
-		}
-	});
+
 
 });

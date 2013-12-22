@@ -13,26 +13,32 @@ $('#submitNewPlasmid').click(function() {
 	var source = $("#source").val();
 	var additional_info = $("#additional_info").val();
 
-
-	// ajax call
-	$.ajax({
-		type: "POST",
-		url: "/plasmids/p_add",
-		data: {name: name,
-				backbone: backbone,
-				insertion: insertion,
-				clone_num: clone_num,
-				purpose: purpose,
-				cloning_sites: cloning_sites,
-				mammalian_selec: mammalian_selec,
-				bacterial_selec: bacterial_selec,
-				source: source,
-				additional_info: additional_info
-			},
-		success: function(response) {
-			console.log(response);
-			$("#results").html(response);
-		}
-	});
+	//  ajaxa call only if required fields is not null or empty
+	if(name && insertion && purpose && source) {
+		// ajax call
+		$.ajax({
+			type: "POST",
+			url: "/plasmids/p_add",
+			data: {name: name,
+					backbone: backbone,
+					insertion: insertion,
+					clone_num: clone_num,
+					purpose: purpose,
+					cloning_sites: cloning_sites,
+					mammalian_selec: mammalian_selec,
+					bacterial_selec: bacterial_selec,
+					source: source,
+					additional_info: additional_info
+				},
+			success: function(response) {
+				$("#results").html(response);
+				$("#results").fadeOut(7000);
+				// clear the form
+				$(":input").val("");
+			}
+		});		
+	} else {
+		$("#results").html("Please fill in required fields.");
+	}
 
 });

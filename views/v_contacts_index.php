@@ -21,16 +21,16 @@
 <div class="main">
   <section id="content">
     <article class="pad_left2">
-      <h2>Contact Form</h2>
+      <h2>Contact Form (* required)</h2>
       <form id="ContactForm" action="#">
         <div class="wrapper">
           <div class="wrapper">
-            <p>Your Name:</p>
-            <input type="text" class="input">
+            <p>Your Name: *</p>
+            <input type="text" class="input" data-validation="required" data-validation-error-msg="This field is required.">
           </div>
           <div class="wrapper">
-            <p>Your E-mail:</p>
-            <input type="text" class="input">
+            <p>Your E-mail: *</p>
+            <input type="text" class="input" data-validation="email">
           </div>
           <div class="wrapper">
             <p>Your Message:</p>

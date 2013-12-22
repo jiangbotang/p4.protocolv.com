@@ -145,11 +145,36 @@ footer .footerlink{position:relative; margin:0 auto; width:850px; z-index:2;}
 	margin: 20px 0px 20px 0px;
 }
 
-#page5 .col4 strong{width:86px; float:left;}
+#page5 .col4 strong{width:115px; float:left; text-align: right;}
 
-
+/* style sign up form*/
 #signupForm div {
-	margin-bottom: 5px;
+	margin-bottom: 8px;
+}
+
+#signupForm div input {
+	margin-left: 10px;
+}
+
+#signupForm input[type="submit"] {
+	margin-left: 125px;
+}
+
+/* style login form */
+#loginForm label, #loginForm input {
+	margin-bottom: 8px;
+}
+
+#loginForm label {
+	text-align: right;
+}
+
+#loginForm input {
+	margin-left: 10px;
+}
+
+#loginForm input[type="submit"] {
+	margin-left: 95px;
 }
 
 input[type="text"], input[type="password"], textarea {
@@ -177,4 +202,14 @@ input[type="text"], input[type="password"], textarea {
 #cont_email {
 	font-size: 1em;
 	border: none;
+}
+
+.error {
+	border: 1px black solid;
+}
+
+/* style result message from server or Ajax call */
+#results {
+	font-weight: bold;
+	color: green;
 }
