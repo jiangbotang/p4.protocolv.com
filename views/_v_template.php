@@ -10,7 +10,9 @@
 	<script src="/js/cufon-yui.js"></script>
 	<script src="/js/cufon-replace.js"></script>
 	<script src="/js/Myriad_Pro_300.font.js"></script>
-	<script src="/js/Myriad_Pro_400.font.js"></script>	
+	<script src="/js/Myriad_Pro_400.font.js"></script>
+	<!-- form validation plugin from formvalidator.net -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.27/jquery.form-validator.min.js"></script>
 					
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
@@ -63,9 +65,9 @@
 	  </div>
 	</footer>
 
-	<script> Cufon.now(); </script>
-
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 
+	<script> Cufon.now(); </script>
+	<script>$.validate();</script>
 </body>
 </html>

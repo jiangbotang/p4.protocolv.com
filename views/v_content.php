@@ -3,7 +3,10 @@
   if(isset($cat_con)) {
     echo $cat_con;
   }
+?>
 
+<div id="itemDisplayArea">
+<?php
   # view module of items, returned from database query, e.g. a list of primers
   # what items will be displayed is controlled by controllers through assigning a modular 
   # view to a particular variable
@@ -31,5 +34,5 @@
  if(isset($sirnas_add_main)) {
     echo $sirnas_add_main;
   }
-
  ?>
+</div>

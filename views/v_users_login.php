@@ -6,7 +6,7 @@
         <h2>Login Here</h2>
         <form id="loginForm" action="/users/p_login" method="POST">
           <label for="email"><strong>Email: </strong></label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" data-validation="email">
           <label for="password"><strong>Password: </strong></label>
           <input type="password" name="password" id="password">
           <input type="submit" value="Log In" class="btn">

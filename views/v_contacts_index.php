@@ -36,7 +36,7 @@
             <p>Your Message:</p>
             <textarea cols="1" rows="1"></textarea>
           </div>
-          <div class="wrapper"> <a href="#" class="link1 right">Send</a> <a href="#" class="link1 right">Clear</a> </div>
+          <div class="wrapper"> <a href="#" class="link1 right">Send</a> <a href="" class="link1 right">Clear</a> </div>
         </div>
       </form>
     </article>
