@@ -14,7 +14,7 @@ class primers_controller extends base_controller {
 	 */
 	public function index($page = 1, $itemPerPage=5) {
 		// check user login status
-		$this->loginCheck();
+		$this->loginCheck_2();
 
 		# get item per page from method argument		
 		$this->item_per_page = $itemPerPage;
@@ -155,6 +155,16 @@ class primers_controller extends base_controller {
 		$totalPages = ceil($totalRows / $this->item_per_page);
 
 		return $totalPages;
+	}
+
+	/*
+	 * a function to check if an user is logged in.
+	 */
+	public function loginCheck_2() {
+		if(!$this->user) {
+			Router::redirect("/users/login");
+		}
+
 	}
 
 }
