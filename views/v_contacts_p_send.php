@@ -18,29 +18,11 @@
     </section>
   </div>
 </div>
+
 <div class="main">
   <section id="content">
     <article class="pad_left2">
-      <h2>Contact Form (* required)</h2>
-      <form id="ContactForm" action="/contacts/p_send" method="POST">
-        <div class="wrapper">
-          <div class="wrapper">
-            <p>Your Name: *</p>
-            <input type="text" name="name" class="input" data-validation="required" data-validation-error-msg="This field is required.">
-          </div>
-          <div class="wrapper">
-            <p>Your E-mail: *</p>
-            <input type="text" name="email" class="input" data-validation="email">
-          </div>
-          <div class="wrapper">
-            <p>Your Message:</p>
-            <textarea name="msg" cols="1" rows="1"></textarea>
-          </div>
-          <div class="wrapper">
-            <input type="submit" value="Send" class="btn_2 right"> 
-          </div>
-        </div>
-      </form>
+      <h2>Your message has been sent. Thank you!</h2>
     </article>
   </section>
 </div>

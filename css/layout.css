@@ -174,7 +174,7 @@ footer .footerlink{position:relative; margin:0 auto; width:850px; z-index:2;}
 }
 
 #loginForm input[type="submit"] {
-	margin-left: 95px;
+	margin-left: 125px;
 }
 
 input[type="text"], input[type="password"], textarea {

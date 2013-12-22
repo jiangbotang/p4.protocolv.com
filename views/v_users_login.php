@@ -2,13 +2,17 @@
 <div class="body3">
   <div class="main">
     <section id="content_top">
-      <article class="pad_left2 col3">
+      <article class="pad_left2 col4">
         <h2>Login Here</h2>
         <form id="loginForm" action="/users/p_login" method="POST">
-          <label for="email"><strong>Email: </strong></label>
-          <input type="text" name="email" id="email" data-validation="email">
-          <label for="password"><strong>Password: </strong></label>
-          <input type="password" name="password" id="password" data-validation="required" data-validation-error-msg="Please enter your password">
+          <div>
+            <label for="email"><strong>Email: </strong></label>
+            <input type="text" name="email" id="email" data-validation="email">
+          </div>
+          <div>
+            <label for="password"><strong>Password: </strong></label>
+            <input type="password" name="password" id="password" data-validation="required" data-validation-error-msg="Please enter your password">
+          </div>
           <input type="submit" value="Log In" class="btn">
         </form>
         <div class="errorMessage">

@@ -1,0 +1,28 @@
+2013-12-22 13:23:23 - INFO --> -------------------------- 
+2013-12-22 13:23:23 - INFO --> Controller/Method: contacts/p_send 
+2013-12-22 13:23:23 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY protocolvservice@gmail.com 
+2013-12-22 13:23:23 - INFO --> From: Research Manager (protocolvservice@gmail.com) 
+2013-12-22 13:23:23 - INFO --> To: Research Manager (protocolvservice@gmail.com),  
+2013-12-22 13:23:23 - INFO --> CC:  
+2013-12-22 13:23:23 - INFO --> BCC:  
+2013-12-22 13:23:23 - INFO --> Subject: Protocolv user contact message 
+2013-12-22 13:23:23 - INFO --> Body: user name: qi yang; user email: ; message:  
+2013-12-22 13:23:34 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 13:24:21 - INFO --> -------------------------- 
+2013-12-22 13:24:21 - INFO --> Controller/Method: contacts/p_send 
+2013-12-22 13:24:21 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY protocolvservice@gmail.com 
+2013-12-22 13:24:21 - INFO --> From: Research Manager (protocolvservice@gmail.com) 
+2013-12-22 13:24:21 - INFO --> To: Research Manager (protocolvservice@gmail.com),  
+2013-12-22 13:24:21 - INFO --> CC:  
+2013-12-22 13:24:21 - INFO --> BCC:  
+2013-12-22 13:24:21 - INFO --> Subject: Protocolv user contact message 
+2013-12-22 13:24:21 - INFO --> Body: user name: qi yang; user email: qi.yang@gmail.com; message: testing message from protocolv. 
+2013-12-22 13:35:05 - INFO --> -------------------------- 
+2013-12-22 13:35:05 - INFO --> Controller/Method: contacts/p_send 
+2013-12-22 13:35:05 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY protocolvservice@gmail.com 
+2013-12-22 13:35:05 - INFO --> From: Research Manager (protocolvservice@gmail.com) 
+2013-12-22 13:35:05 - INFO --> To: Research Manager (protocolvservice@gmail.com),  
+2013-12-22 13:35:05 - INFO --> CC:  
+2013-12-22 13:35:05 - INFO --> BCC:  
+2013-12-22 13:35:05 - INFO --> Subject: Protocolv user contact message 
+2013-12-22 13:35:05 - INFO --> Body: user name: Jiangbo Tang; user email: tangji@mail.med.upenn.edu; message: this is a testing message sending from protocolv contact form. 
