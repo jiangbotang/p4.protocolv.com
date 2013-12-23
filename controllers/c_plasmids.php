@@ -153,7 +153,8 @@ class plasmids_controller extends base_controller {
 	# run the query
 	$results = DB::instance(DB_NAME)->query($q);
 
-	$totalRows = mysqli_fetch_row($results)[0];
+	$totalRows = mysqli_fetch_row($results);
+	$totalRows = $totalRows[0];
 	$totalPages = ceil($totalRows / $this->item_per_page);
 
 	return $totalPages;
